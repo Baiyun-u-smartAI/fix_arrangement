@@ -11,7 +11,7 @@ def two_in_one(b,c):
 
 def to_apart(a):
     b=[]
-    len_b=len(a)/2
+    len_b=len(a)//2
     while len(b)!=len_b:
         b.append(a.pop(0))
     return b,a
@@ -28,4 +28,4 @@ if __name__ ==  "__main__":
     b,c=to_apart(a)
     b=fix_arrange(b)
     c=fix_arrange(c)
-    print two_in_one(b,c)
+    print(two_in_one(b,c))
